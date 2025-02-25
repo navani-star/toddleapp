@@ -1,0 +1,125 @@
+ Basic reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Navbar container */
+   .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #eaeaea;
+  } 
+  
+  /* Brand area */
+   .navbar-left {
+    display: flex;
+    align-items: center;
+  } 
+
+  /* Example brand styling */
+   .brand-logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+  } 
+  
+   .brand-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1142a; /* Pink-ish circle behind the 't' */
+    color: #fff;
+    font-weight: bold;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    margin-left: 1rem; 
+   }
+  
+  
+  /* Right section with search + button */
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+   
+  /* Search box container */
+   .search-box {
+    position: relative;
+    margin-right: 1rem;
+  } 
+  
+   .search-icon {
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 0.9rem;
+  }
+  
+  .search-box input {
+    padding: 0.5rem 0.5rem 0.5rem 2rem; 
+     /* space for icon  */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    font-size: 0.9rem;
+    width: 180px;
+    transition: border-color 0.3s;
+  } 
+  
+   .search-box input:focus {
+    border-color: #999;
+  } 
+  
+   /* Create Board button  */
+
+  .create-board-btn {
+    background-color: #ea3648; /* Pink color for the button */
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 0.6rem 1rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 1rem; 
+  }
+  
+   .create-board-btn:hover {
+    background-color: #ec3f4c;
+  } 
+
+  .color-picker {
+    display: flex;
+    gap: 8px;
+    padding: 8px 0;
+  }
+  
+  .color-swatch {
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    border: 2px solid transparent;
+  }
+  
+  .color-swatch:hover {
+    transform: scale(1.1);
+  }
+  
+  .color-swatch.selected {
+    border: 2px solid #000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
